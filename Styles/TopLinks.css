@@ -1,10 +1,18 @@
 table{
 	border-collapse: collapse;
+	
+}
+
+body{
+	background-color:#c48c58;
 }
 
 #LogoPhoto{
-	height:250;
-	width:250;
+	height:30%;
+	width:25%;
+	display:block;
+	margin:0 auto;
+	
 }
 
 #TopLinks {
@@ -13,7 +21,39 @@ table{
 	border:
 }
 
-footer {
-	
-	text-align: center;
+#JackiePhoto {
+	max-height:200;
+	max-width:200;
+	border-radius:50%;
+	float:left;
+}
+
+aboutGrandma{
+	border-width:5px;
+	padding:20px20px;
+}
+
+links{
+	padding-right:20px;
+}
+
+h2{
+	right:0;
+	left:0;
+	text-align:center;
+}
+h1{
+	right:0;
+	left:0;
+	text-align:center;
+}
+
+
+
+#footer {
+	position:absolute;
+	right:0;
+	bottom:0;
+	left:0;
+	text-align: center;	
 }
