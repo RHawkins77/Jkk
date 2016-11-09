@@ -1,3 +1,12 @@
 <?php $thisPage="loginPage"; ?>
 session_start();
-<?php 
+
+<html>
+<head></head>
+<body>
+
+<?php include('Login.html') ?>
+
+
+</body>
+</html>
