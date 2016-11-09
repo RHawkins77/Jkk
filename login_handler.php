@@ -1,5 +1,21 @@
-<?php
-	session_start();
+
+<?php 
+session_start();
+
+	
+	if(0=== preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
+		$_SESSION['message'][] = "Invalid email Address";
+	}
+	if(empty($password)){
+		&_SESSION['message'][] = "Missing Password";
+	}
+	if(isset($_SESSION['message'])){
+		$_SESSION['presets']['email'] = $email;
+		header("Location:login.php");
+		exit;
+	}
+	
+	
 	
 	
 	if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&

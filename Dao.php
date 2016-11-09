@@ -20,6 +20,7 @@ class Dao {
 		return $conn->query();
 	}
 
+	/*
   public function getProducts () {
     $conn = $this->getConnection();
     return $conn->query("SELECT id, name FROM product");
@@ -33,9 +34,20 @@ class Dao {
     $q->execute();
     return reset($q->fetchAll());
   }
-
+	*/
   
-  public function doesUserExist ()
+  public function doesUserExist ($email, $password){
+	  $conn = $this->get connection();
+	  $p = $conn->prepare("SELECT * FROM user where email = :email AND password = :password");
+	  $p->bindParam(":email", $email);
+	  $p->bindParam(":password", $password);
+	  $p->execute();
+	  $results = $p->fetch(PDO::FETCH_ASSOC);
+  if(results != $email, $password)}{
+	  
+  }
+	 
+  }
   
   public function saveProduct ($name, $description, $imagePath) {
     $conn = $this->getConnection();
