@@ -1,3 +1,11 @@
-<?php $thisPage="Home"; ?>
 
-<?php include 'index.html';?>
+<html>
+<head></head>
+<body>
+
+<?php include('index.html') ?>
+
+<?php echo'index.html' ?>
+
+</body>
+</html>
