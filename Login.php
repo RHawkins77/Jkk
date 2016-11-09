@@ -1,5 +1,7 @@
 <?php $thisPage="loginPage"; 
 session_start();
+
+echo"helloworld";
 phpinfo();
  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
     header("Location:granted.php");
