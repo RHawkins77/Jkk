@@ -9,7 +9,6 @@ phpinfo();
   if (isset($_SESSION["email_preset"])) {
     $email = $_SESSION["email_preset"];
   }
-
 ?>
 
 
@@ -39,7 +38,7 @@ phpinfo();
 
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
-		<div>Email: <input value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : "" ?>" type="text" name="email"></div>
+		<div>Email: <input value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : "" ?> type="text" name="email"></div>
 		<div>PassWord: <input type="password" name="password"></div>
 		<div>Login <input type="submit" name="Login"></div>
 	</form>
