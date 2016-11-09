@@ -3,22 +3,47 @@ table{
 	
 }
 
+
+
 body{
 	background-color:#c48c58;
 }
 
 #LogoPhoto{
-	height:30%;
-	width:25%;
+	height:25%;
+	width:20%;
 	display:block;
 	margin:0 auto;
 	
 }
-
-#TopLinks {
+h2{
+	right:0;
+	left:0;
 	text-align:center;
+}
+h1{
+	display:block;
+	border:5%;
+	text-align:center;
+	padding:  0.25%;
+}
+
+
+li{
+	display:inline;
+}
+
+li:hover{
+	background-color: black;
+}
+
+#Navigation {
+
+	text-align:center;
+	margin-bottom:10px;
+	padding:50px,20px,50px,20px;
 	background-color:#F;
-	border:
+	list-style-type:none;
 }
 
 #Jackie {
@@ -26,34 +51,63 @@ body{
 	max-width:200;
 	border-radius:50%;
 	float:left;
+
 }
 
-aboutGrandma{
-	border-width:5px;
-	padding:20px20px;
-}
-
-links{
-	padding-right:20px;
-}
-
-h2{
-	right:0;
-	left:0;
+aboutheader{
+	
 	text-align:center;
+	height:10%;
+	width:10%;
+
 }
-h1{
-	right:0;
-	left:0;
+
+#aboutgrandma{
+	
+	margin:auto;
+	padding:auto;
+}
+
+
+
+#aboutsection {
+	font-family: 'Dancing Script', cursive;
+	font-size:30px;
+	display:block;
+	border: 5px solid black;
+	margin:auto;
+	padding:auto;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
 	text-align:center;
+    max-width: 50%;
 }
 
 
 
-#footer {
-	position:absolute;
-	right:0;
-	bottom:0;
-	left:0;
-	text-align: center;	
+#logmein{
+	font-size:30px;
+	display:block;
+	border: 5px solid black;
+	margin:auto;
+	padding:auto;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	text-align:center;
+    max-width: 50%;
+}
+
+
+
+#bottomfooter {
+	float:left;
+	font-family: 'Dancing Script', cursive;
+	font-size:20px;
+	line-height:1.5;
+	width:50%;
+	text-align:center;
+	position:fixed;
+	
 }
