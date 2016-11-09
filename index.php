@@ -5,7 +5,6 @@
 
 <?php include('index.html') ?>
 
-<?php echo'index.html' ?>
 
 </body>
 </html>
