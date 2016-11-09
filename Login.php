@@ -1,4 +1,4 @@
-<?php $thisPage="loginPage"; 
+<?php $thisPage="loginPage.php"; 
 session_start();
 phpinfo();
  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
