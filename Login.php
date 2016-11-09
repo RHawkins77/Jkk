@@ -10,7 +10,7 @@ phpinfo();
     $email = $_SESSION["email_preset"];
   }
 
-
+?>
 
 
 <html>
@@ -32,7 +32,7 @@ phpinfo();
 <h2 id="loginHeader">Log Into Account</h2>
 <?php
     if (isset($_SESSION["status"])) {
-      echo "<div id="status">" .  $_SESSION["status"] . "</div>";
+      echo <div id="status"> .  $_SESSION["status"] . </div>;
       unset($_SESSION["status"]);
     }
 ?>
@@ -52,5 +52,5 @@ phpinfo();
 	</div>
 </html>
 
-	?>
+
 
