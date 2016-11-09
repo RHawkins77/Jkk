@@ -1,10 +1,56 @@
-<?php $thisPage="loginPage"; ?>
+<?php $thisPage="loginPage"; 
 session_start();
 
+ if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
+    header("Location:granted.php");
+  }
+
+  $email = "";
+  if (isset($_SESSION["email_preset"])) {
+    $email = $_SESSION["email_preset"];
+  }
+?>
+
+
+
 <html>
+	<head>
+	  <link href="Styles/TopLinks.css" type="text/css" rel="stylesheet">
+	  <link rel="LOGO" type="image/png" href="favicon.ico">	
+	</head>
 <body>
+<p>
+<div id="LogoAndName">
+<img id="LogoPhoto" src="LOGO.JPG" alt="Logo"/>
+</p>
+<h1>Jackie's Knitting Nook</h1>
+</div>
 
 
 
+
+<h2 id="loginHeader">Log Into Account</h2>
+<?php
+    if (isset($_SESSION["status"])) {
+      echo "<div id="status">" .  $_SESSION["status"] . "</div>";
+      unset($_SESSION["status"]);
+    }
+?>
+
+<div id="logininputs">
+	<form method="POST" action="login_handler.php">
+		<div>Email: <input type="text" name="email"></div>
+		<div>PassWord: <input type="password" name="<?php echo $email; ?>"></div>
+		<div>Login <input type="submit" name="Login"></div>
+	</form>
+</div>
 </body>
+	<div id="footer">
+	<p>
+	<Strong>&copy; Jackie's Knitting Nook, all items owned by "" photo's are not to be used elsewhere without permission and Compensation.</Strong>
+	</p>
+	</div>
 </html>
+
+	
+

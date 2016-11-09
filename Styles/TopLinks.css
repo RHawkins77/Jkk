@@ -34,7 +34,13 @@ li{
 li:hover{
 	background-color: black;
 }
+ 
+li:responsive{
+	background-color: brown;
+}
 
+ 
+ 
 #Navigation {
 
 	text-align:center;
@@ -44,7 +50,14 @@ li:hover{
 	list-style-type:none;
 }
 
+#aboutJackieHeader{
+	text-align:center;
+}
+
 #logininputs{
+	position:absolute;
+	top:50%;
+	left:50%;
 	float:center;
 }
 
@@ -103,13 +116,11 @@ li:hover{
 
 
 
-#bottomfooter {
-	float:left;
-	font-family: 'Dancing Script', cursive;
-	font-size:20px;
-	line-height:1.5;
-	width:50%;
-	text-align:center;
-	position:fixed;
-	
+#footer{
+position: absolute;
+margin:20px;
+
+bottom: 0;
+width: 100%;
+height: 60px;
 }

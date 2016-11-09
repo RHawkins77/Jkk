@@ -1,11 +1,12 @@
 <?php
+
 phpinfo();
 class Dao {
 	
-	private $host = us-cdbr-iron-east-04.cleardb.net;
-	private $db = heroku_941aeb476fe88e0;
-	private $user = baffcfe242cc7e;
-	private $pass = 5d198c3d;
+	private $host = "us-cdbr-iron-east-04.cleardb.net";
+	private $db = "heroku_941aeb476fe88e0";
+	private $user = "baffcfe242cc7e";
+	private $pass = "5d198c3d";
 	
 	
 	public function getConnection () {
@@ -13,6 +14,12 @@ class Dao {
 				new PDO( "mysql:us-cdbr-iron-east-04={$this->host};heroku_941aeb476fe88e0={$this->db}", $this->user,
 				$this->pass);	
 }
+
+	public function getUserByEmail($email){
+		$conn=$this->getConnection();
+		return $conn->query();
+	}
+
   public function getProducts () {
     $conn = $this->getConnection();
     return $conn->query("SELECT id, name FROM product");
