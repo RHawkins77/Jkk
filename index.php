@@ -12,7 +12,7 @@
 </p>
 </div>
 <div id="account">
-<a href="<?php include("Login.php");?>">LOGIN</a> |
+<a href="Login.php">LOGIN</a> |
 <a href="CreateAccount.html">Create Account</a>
 </div>
 <h1>Jackie's Knitting Nook</h1>
