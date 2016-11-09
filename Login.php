@@ -14,10 +14,10 @@ session_start();
 
 
 <html>
-	<head>
+	<head></head>
 	  <link href="Styles/TopLinks.css" type="text/css" rel="stylesheet">
 	  <link rel="LOGO" type="image/png" href="favicon.ico">	
-	</head>
+	
 <body>
 <p>
 <div id="LogoAndName">
