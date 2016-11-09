@@ -34,6 +34,9 @@ class Dao {
     return reset($q->fetchAll());
   }
 
+  
+  public function doesUserExist ()
+  
   public function saveProduct ($name, $description, $imagePath) {
     $conn = $this->getConnection();
     $saveQuery =

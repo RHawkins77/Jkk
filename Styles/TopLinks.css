@@ -114,7 +114,9 @@ li:responsive{
     max-width: 50%;
 }
 
-
+h2{
+	text-align:center;
+}
 
 #footer{
 position: absolute;
