@@ -9,7 +9,7 @@ phpinfo();
   if (isset($_SESSION["email_preset"])) {
     $email = $_SESSION["email_preset"];
   }
-?>
+
 
 
 
@@ -52,5 +52,5 @@ phpinfo();
 	</div>
 </html>
 
-	
+	?>
 
