@@ -44,6 +44,10 @@ li:hover{
 	list-style-type:none;
 }
 
+#logininputs{
+	float:center;
+}
+
 #Jackie {
 	max-height:200;
 	max-width:200;
