@@ -32,8 +32,6 @@ echo $query;
   $_SESSION["status"] = $status;
   $_SESSION["email_preset"] = $_POST["email"];
   $_SESSION["access_granted"] = false;
-
   header("Location:login.php");
-}
-		
+}	
 ?>
