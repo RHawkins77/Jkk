@@ -1,4 +1,6 @@
-<?php $thisPage="loginPage.php"; 
+ 
+<?php $thisPage="loginPage.php";
+/**
 session_start();
  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
     header("Location:granted.php");
@@ -8,6 +10,7 @@ session_start();
   if (isset($_SESSION["email_preset"])) {
     $email = $_SESSION["email_preset"];
   }
+  **/
 ?>
 
 <html>
@@ -25,17 +28,13 @@ session_start();
 
 
 <h2 id="loginHeader">Log Into Account</h2>
-<?php
-    if (isset($_SESSION["status"])) {
-      echo <div id="status"> .  $_SESSION["status"] . </div>;
-      unset($_SESSION["status"]);
-    }
-?>
+
 
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
-		<label for="query">Enter your Email and Password:</label><br>
-		Email:<input value="myemailhere" type="text" name="email"><br>
+		<label for="email">Enter your Email:</label>
+		Email:<input value="text" type="text" name="email"><br>
+		<label for="password">Enter your Email:</label><br>
 		PassWord:<input type="password" name="password"><br>
 		Login<input type="submit" name="Login">
 	</form>

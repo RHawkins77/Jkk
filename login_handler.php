@@ -2,12 +2,11 @@
 session_start();
 
 var_dump($_GET);
-$query = $_GET['query'];
-echo $query;
+$email = $_GET['email'];
+$password = $_GET['password'];
 
 	
-	
-	if(0=== preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
+	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
 	}
 	if(empty($password)){
