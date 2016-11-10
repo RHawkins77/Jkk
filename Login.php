@@ -38,7 +38,7 @@ phpinfo();
 
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
-		<label for"query">Enter your Email and Password:</label><br>
+		<label for="query">Enter your Email and Password:</label><br>
 		Email:<input value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : "" ?>" type="text" name="email"><br>
 		PassWord:<input type="password" name="password"><br>
 		Login<input type="submit" name="Login">
