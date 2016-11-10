@@ -1,7 +1,7 @@
-
 <?php 
 session_start();
 
+	
 	
 	if(0=== preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
