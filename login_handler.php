@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-var_dump($_POST);
+
 $email = $_POST['email'];
 $password = $_POST['password'];
 
