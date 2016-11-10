@@ -2,8 +2,8 @@
 session_start();
 
 var_dump($_POST);
-$email = $_GET['email'];
-$password = $_GET['password'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
 	
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
@@ -34,3 +34,6 @@ $password = $_GET['password'];
   header("Location:login.php");
 }	
 ?>
+
+<p> FUll name: <?= $email ?></p>
+<p> FUll password: <?= $password ?></p>
