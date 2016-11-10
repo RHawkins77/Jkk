@@ -1,7 +1,8 @@
  
 <?php $thisPage="loginPage.php";
-/**
 session_start();
+/**
+
  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
     header("Location:granted.php");
   }
@@ -33,9 +34,9 @@ session_start();
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
 		<label for="email">Enter your Email:</label>
-		Email:<input value="text" type="text" name="email"><br>
-		<label for="password">Enter your Email:</label><br>
-		PassWord:<input type="password" name="password"><br>
+		<input value="text" type="text" name="email"><br>
+		<label for="password">Enter your Password:</label><br>
+		<input type="password" name="password"><br>
 		Login<input type="submit" name="Login">
 	</form>
 </div>
