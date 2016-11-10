@@ -33,11 +33,12 @@ session_start();
 
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
-		<label for="email">Enter your Email:</label>
-		<input value="text" type="text" name="email"><br>
+		<label for="email">Enter your Email:</label><br>
+		<input type="text" name="email"><br>
 		<label for="password">Enter your Password:</label><br>
 		<input type="password" name="password"><br>
-		Login<input type="submit" name="Login">
+		<label for"Login">Login Button:</label>
+		<input type="submit" name="Login">
 	</form>
 </div>
 </body>

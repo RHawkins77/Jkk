@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-var_dump($_GET);
+var_dump($_POST);
 $email = $_GET['email'];
 $password = $_GET['password'];
 
@@ -22,7 +22,7 @@ $password = $_GET['password'];
 	
 	
 	if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
-    "helloworld" == $_POST["password"]) {
+  "helloworld" == $_POST["password"]) {
   $_SESSION["access_granted"] = true;
   header("Location:granted.php");
 
