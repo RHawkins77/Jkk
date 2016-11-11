@@ -27,7 +27,7 @@ $valid = true;
 	
 	
 
-if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
+/**if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   "helloworld" == $_POST["password"]) {
   $_SESSION["access_granted"] = true;
   header("Location:granted.php");
@@ -39,6 +39,7 @@ if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   $valid = false;
   header("Location:login.php");
 }	
+**/
 
 var_dump($valid);
 //if all valid, redirect the user to the Welcome page.
@@ -51,10 +52,4 @@ var_dump($valid);
 	
 ?>
 
-<html>
-	<head></head>
-	<body>
-<p> FULL name: <?= htmlspecialchars($email) ?></p>
-<p> FULL password: <?= htmlspecialchars($password) ?></p>
-</body>
-</html>
+
