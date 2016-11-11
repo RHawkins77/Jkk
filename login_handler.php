@@ -61,7 +61,7 @@ if($valid == true){
 <html>
 	<head></head>
 	<body>
-<p> FULL name: <?= htmlspecialchars($email) ?></p>
+<p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
 <?php	} ?>
