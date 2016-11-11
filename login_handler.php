@@ -10,6 +10,8 @@ $valid = true;
 		$emailError = "Invalid Email Address Size";
 		$valid = false;
 	}
+	
+	**/
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
 		$valid = false;
@@ -26,7 +28,7 @@ $valid = true;
 
 	
 	
-
+/**
 if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   "helloworld" == $_POST["password"]) {
   $_SESSION["access_granted"] = true;
@@ -38,7 +40,8 @@ if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   $_SESSION["access_granted"] = false;
   $valid = false;
   header("Location:login.php");
-}	
+}
+**/	
 
 /**
 if all valid, redirect the user to the Welcome page.
