@@ -41,6 +41,19 @@ if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
 }	
 
 ?>
+
+
+<?php
+//if all valid, redirect the user to the Welcome page.
+if($valid == true){
+	header('Location: welcome.php');
+}	else {
+	//else redirect them to the form
+	redirect('Location: index.php')
+}
+	
+?>
+
 <html>
 	<head></head>
 	<body>
@@ -48,16 +61,3 @@ if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 </body>
 </html>
-
-<?php
-//if all valid, redirect the user to the Welcome page.
-if($valid == true){
-	header('Location: welcome.php');
-}else {
-	//else redirect them to the form
-	redirect('Location: index.php')
-}
-	
-
-
-}
