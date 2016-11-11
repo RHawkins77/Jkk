@@ -10,7 +10,7 @@ $valid = true;
 		$emailError = "Invalid Email Address Size";
 		$valid = false;
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL){
-		$emailError = "Invalid email address"
+		$notAEmail = "not an email"
 	}
 	
 	
@@ -65,6 +65,10 @@ if($valid == true){
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
 <?php	} ?>
+<?php if(isset($notAEmail)){  ?>
+	<span id="notAEmail" class"error"><?= $notAEmail ?></span>
+<?php	} ?>
+
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 </body>
 </html>
