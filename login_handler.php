@@ -5,13 +5,14 @@ session_start();
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $valid = true;
-/**	
-	if(strlen($email) <=13 || strlen($email) > 256){
+
+	if(strlen($email) <=10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 		$valid = false;
 	}
 	
-	**/
+	
+	/**
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
 		$valid = false;
@@ -25,7 +26,7 @@ $valid = true;
 		header("Location:login.php");
 		exit;
 	}
-
+	**/
 	
 	
 /**
@@ -59,6 +60,9 @@ if($valid == true){
 	<head></head>
 	<body>
 <p> FULL name: <?= htmlspecialchars($email) ?></p>
+<?php if(isset($emailError)){  ?>
+	<span id="emailError" class"error"><?= $emailError ?></span>
+<?php	} ?>
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 </body>
 </html>
