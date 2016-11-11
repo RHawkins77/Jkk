@@ -9,6 +9,8 @@ $valid = true;
 	if(strlen($email) <=10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 		$valid = false;
+	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL){
+		$emailError = "Invalid email address"
 	}
 	
 	
