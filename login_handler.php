@@ -40,17 +40,14 @@ if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   header("Location:login.php");
 }	
 
-?>
-
-
-<?php
+var_dump($valid);
 //if all valid, redirect the user to the Welcome page.
-if($valid == true){
-	header('Location: welcome.php');
-}	else {
-	//else redirect them to the form
-	redirect('Location: index.php')
-}
+//if($valid == true){
+//	header('Location: welcome.php');
+//}	else {
+//	//else redirect them to the form
+//	redirect('Location: index.php')
+//}
 	
 ?>
 
