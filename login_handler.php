@@ -59,7 +59,7 @@ $valid = true;
 <head></head>
 <body>
 
-<p> var_dump($valid);
+<p> $valid;
 
 </body>
 </html>
