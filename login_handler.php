@@ -6,10 +6,13 @@ $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $valid = true;
 	
-	if(strlen($email) <=13 || strlen($email) > 256){
-		$emailError = "Invalid Email Address Size";
+	
+	/**
+	if(empty($email)  || strlen($email) > 256){
+		$_SESSION['message'][] = "Invalid Email Address Size";
 		$valid = false;
 	}
+	**/
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
 		$valid = false;
@@ -24,8 +27,9 @@ $valid = true;
 		exit;
 	}
 
-	
-	
+	if(isset($_SESSION['message'][]){
+		echo var_dump($_SESSION['message'][]);
+	}
 
 /**if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   "helloworld" == $_POST["password"]) {
@@ -41,7 +45,7 @@ $valid = true;
 }	
 **/
 
-header('Location:welcome.php');
+
 //if all valid, redirect the user to the Welcome page.
 //if($valid == true){
 //	header('Location: welcome.php');
@@ -49,7 +53,13 @@ header('Location:welcome.php');
 //	//else redirect them to the form
 //	header('Location: index.php')
 //}
-	
 ?>
 
+<html>
+<head></head>
+<body>
 
+<p> var_dump($valid);
+
+</body>
+</html>
