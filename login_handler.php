@@ -4,8 +4,9 @@ session_start();
 
 $email = $_POST['email'];
 $password = $_POST['password'];
-
-	/**
+	
+	
+	
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
 	}
@@ -17,7 +18,7 @@ $password = $_POST['password'];
 		header("Location:login.php");
 		exit;
 	}
-	**/
+
 	
 	
 /**	
@@ -38,7 +39,7 @@ $password = $_POST['password'];
 <html>
 	<head></head>
 	<body>
-<p> FUll name: <?= $email ?></p>
-<p> FUll password: <?= $password ?></p>
+<p> FULL name: <?= htmlspecialchars($email) ?></p>
+<p> FULL password: <?= htmlspecialchars($password) ?></p>
 </body>
 </html>
