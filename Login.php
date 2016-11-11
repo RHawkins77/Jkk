@@ -34,9 +34,9 @@ session_start();
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
 		<label for="email">Enter your Email:</label><br>
-		<input type="email" name="email" required><br>
+		<input type="email" name="email"><br>
 		<label for="password">Enter your Password:</label><br>
-		<input type="password" name="password" required><br>
+		<input type="password" name="password"><br>
 		<label for"Login">Login Button:</label>
 		<input type="submit" name="Login">
 	</form>
