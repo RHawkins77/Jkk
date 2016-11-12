@@ -4,7 +4,7 @@ $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $valid = true;
 
-
+/**
 
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
@@ -17,7 +17,7 @@ $valid = true;
 		$passwordSizeError = "Too small or too big of an email";
 		valid = false;
 	}
-
+**/
 	
 	/**
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
@@ -36,19 +36,19 @@ $valid = true;
 	**/
 	
 
-/*
+/**
 if("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim($_POST["password"])) {
- // $_SESSION["access_granted"] = true;
+ $_SESSION["access_granted"] = true;
   header("Location:granted.php");
 } else {
   $statusError = "Invalid username or password";
-//  $_SESSION["status"] = $status;
-//  $_SESSION["email_preset"] = $_POST["email"];
-// $_SESSION["access_granted"] = false;
+ $_SESSION["status"] = $status;
+  $_SESSION["email_preset"] = $_POST["email"];
+$_SESSION["access_granted"] = false;
   $valid = false;
   header("Location:login.php");
 }
-*/
+**/
 
 /**
 if all valid, redirect the user to the Welcome page.
@@ -75,4 +75,6 @@ if($valid == true){
 <?php	} ?>
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 
-
+<?php
+ header('index.php');
+?>
