@@ -1,7 +1,7 @@
 <?php 
 //session_start();
-//$email = trim($_POST['email']);
-//$password = trim($_POST['password']);
+$email = trim($_POST['email']);
+$password = trim($_POST['password']);
 //$filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 /**
@@ -32,6 +32,7 @@
 	<html>
 <head></head>
 <body>
+<form method="GET" action="login_handler.php">
 <p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
@@ -43,6 +44,7 @@
 	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
 <?php	} ?>
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
+</form>
 </body>
 </html>
 	
