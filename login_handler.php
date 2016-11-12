@@ -63,9 +63,11 @@ if($valid == true){
 <p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
+		<span<span id="valid" class"error"><?= $valid ?></span>
 <?php	} ?>
 <?php if(isset($notAEmail)){  ?>
 	<span id="notAEmail" class"error"><?= $notAEmail ?></span>
+	<span<span id="valid" class"error"><?= $valid ?></span>
 <?php	} ?>
 
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
