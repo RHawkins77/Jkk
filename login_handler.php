@@ -32,6 +32,7 @@ $password = trim($_POST['password']);
 	
 	
 /**
+header('Location:index.php');
 if ("rhawkins@u.boisestate.edu" == $_POST["email"] &&
   "helloworld" == $_POST["password"]) {
   $_SESSION["access_granted"] = true;
@@ -72,4 +73,3 @@ if($valid == true){
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 
 <?php
-header('Location:index.php');
