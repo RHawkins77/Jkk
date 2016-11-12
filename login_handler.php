@@ -1,8 +1,8 @@
 <?php 
-session_start();
-$email = trim($_POST['email']);
-$password = trim($_POST['password']);
-$filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
+//session_start();
+//$email = trim($_POST['email']);
+//$password = trim($_POST['password']);
+//$filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 /**
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
