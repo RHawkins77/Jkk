@@ -2,20 +2,21 @@
 session_start();
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
+$filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 
 	
-	/**
+	
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 	
-	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL === false)){
 		$notAEmail = "not an email";
 	}
 	if(isempty($password) || strlen($password) > 100){
 		$passwordSizeError = "Too small or too big of an email";
 	}
-**/
+
 	?>
 	
 	
