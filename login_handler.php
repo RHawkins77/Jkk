@@ -4,14 +4,18 @@ session_start();
 
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
-$valid = true;
+
 
 	if(strlen($email) <=10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
-		$valid = false;
+	
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL){
 		$notAEmail = "not an email"
-		$valid = false;
+	
+	}
+	
+	if(strlen($password) <=0 || strlen($password)>100);{
+		$passwordSizeError = "Too small or too big of an email"
 	}
 	
 	
@@ -63,11 +67,12 @@ if($valid == true){
 <p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
-		<span<span id="valid" class"error"><?= $valid ?></span>
 <?php	} ?>
 <?php if(isset($notAEmail)){  ?>
 	<span id="notAEmail" class"error"><?= $notAEmail ?></span>
-	<span<span id="valid" class"error"><?= $valid ?></span>
+<?php	} ?>
+<?php if(isset($passwordSizeError)){  ?>
+	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
 <?php	} ?>
 
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
