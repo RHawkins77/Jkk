@@ -32,7 +32,7 @@ $password = trim($_POST['password']);
 	<html>
 <head></head>
 <body>
-<form method="GET" action="login_handler.php">
+
 <p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
@@ -44,7 +44,7 @@ $password = trim($_POST['password']);
 	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
 <?php	} ?>
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
-</form>
+
 </body>
 </html>
 	
