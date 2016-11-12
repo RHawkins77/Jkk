@@ -7,12 +7,12 @@ $password = trim($_POST['password']);
 	if(strlen($email) <=10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-		$notAEmail = "not an email"
+		$notAEmail = "not an email";
 	}
 	if(strlen($password) <=0 || strlen($password)>100);{
-		$passwordSizeError = "Too small or too big of an email"
+		$passwordSizeError = "Too small or too big of an email";
 	}
-	
+
 	
 	/**
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
@@ -69,6 +69,7 @@ if($valid == true){
 <?php if(isset($passwordSizeError)){  ?>
 	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
 <?php	} ?>
-
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 
+<?php
+header('Location:index.php');
