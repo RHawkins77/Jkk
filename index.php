@@ -17,9 +17,7 @@
 </div>
 <h1>Jackie's Knitting Nook</h1>
 
-<?php if(isset($statusError)){  ?>
-	<span id="statusError" class"error"><?= $statusError ?></span>
-<?php	} ?>
+
 
 <?php require 'naviagation.php'; ?>
 
