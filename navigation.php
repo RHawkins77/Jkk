@@ -1,6 +1,5 @@
-<?php 
-echo
-'<div id ="navigation">
+
+<div id ="navigation">
 <ul>
 	<li'<?php if ($thisPage=="Home") echo " id=\"currentpage\""; ?>'>
 	<a href="index.html">Home</a>|</li>
@@ -23,6 +22,5 @@ echo
 	<li'<?php if ($thisPage=="ContactUs") echo " id=\"currentpage\""; ?>'>
 	<a href="ContactUs.html">Contact Us</a></li>
 </ul>
-</div>';
+</div>
 
-?>
