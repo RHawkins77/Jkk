@@ -5,8 +5,16 @@ $password = trim($_POST['password']);
 $filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 
+	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
+		$_SESSION['message'][] = "Invalid email Address";
+		$valid = false;
+	}
+	if(empty($password)){
+		&_SESSION['message'][] = "Missing Password";
+		$valid = false;
+	}
 	
-	
+	/**
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 	
@@ -16,7 +24,7 @@ $filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 	if(!isset($password) === true || strlen($password) > 100){
 		$passwordSizeError = "Too small or too big of an email";
 	}
-
+**/
 	?>
 	
 	
@@ -41,14 +49,7 @@ $filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 	
 <?php	
 	/**
-	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
-		$_SESSION['message'][] = "Invalid email Address";
-		$valid = false;
-	}
-	if(empty($password)){
-		&_SESSION['message'][] = "Missing Password";
-		$valid = false;
-	}
+
 	if(isset($_SESSION['message'])){
 		$_SESSION['presets']['email'] = $email;
 		header("Location:login.php");
