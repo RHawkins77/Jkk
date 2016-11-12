@@ -11,6 +11,7 @@ $valid = true;
 		$valid = false;
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL){
 		$notAEmail = "not an email"
+		$valid = false;
 	}
 	
 	
@@ -58,9 +59,7 @@ if($valid == true){
 	
 ?>
 
-<html>
-	<head></head>
-	<body>
+
 <p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
@@ -70,5 +69,4 @@ if($valid == true){
 <?php	} ?>
 
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
-</body>
-</html>
+
