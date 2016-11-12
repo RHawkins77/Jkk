@@ -5,7 +5,7 @@ $password = trim($_POST['password']);
 
 
 	
-	
+	/**
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 	
@@ -15,8 +15,30 @@ $password = trim($_POST['password']);
 	if(isempty($password) || strlen($password) > 100){
 		$passwordSizeError = "Too small or too big of an email";
 	}
-
+**/
+	?>
 	
+	
+	
+	<html>
+<head></head>
+<body>
+<p> FULL Email: <?= htmlspecialchars($email) ?></p>
+<?php if(isset($emailError)){  ?>
+	<span id="emailError" class"error"><?= $emailError ?></span>
+<?php	} ?>
+<?php if(isset($notAEmail)){  ?>
+	<span id="notAEmail" class"error"><?= $notAEmail ?></span>
+<?php	} ?>
+<?php if(isset($passwordSizeError)){  ?>
+	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
+<?php	} ?>
+<p> FULL password: <?= htmlspecialchars($password) ?></p>
+</body>
+</html>
+	
+	
+<?php	
 	/**
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
 		$_SESSION['message'][] = "Invalid email Address";
@@ -60,19 +82,3 @@ if($valid == true){
 	
 ?>
 
-<html>
-<head></head>
-<body>
-<p> FULL Email: <?= htmlspecialchars($email) ?></p>
-<?php if(isset($emailError)){  ?>
-	<span id="emailError" class"error"><?= $emailError ?></span>
-<?php	} ?>
-<?php if(isset($notAEmail)){  ?>
-	<span id="notAEmail" class"error"><?= $notAEmail ?></span>
-<?php	} ?>
-<?php if(isset($passwordSizeError)){  ?>
-	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
-<?php	} ?>
-<p> FULL password: <?= htmlspecialchars($password) ?></p>
-</body>
-</html>
