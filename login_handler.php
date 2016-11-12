@@ -13,7 +13,7 @@ $filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL === false)){
 		$notAEmail = "not an email";
 	}
-	if(isempty($password) || strlen($password) > 100){
+	if(!isset($password) === true || strlen($password) > 100){
 		$passwordSizeError = "Too small or too big of an email";
 	}
 
