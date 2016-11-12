@@ -2,9 +2,8 @@
 session_start();
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
-//$valid = true;
+$valid = true;
 
-/**
 
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
@@ -17,7 +16,7 @@ $password = trim($_POST['password']);
 		$passwordSizeError = "Too small or too big of an email";
 		valid = false;
 	}
-**/
+
 	
 	/**
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
