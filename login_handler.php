@@ -2,7 +2,7 @@
 session_start();
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
-$valid = true;
+//$valid = true;
 
 /**
 
