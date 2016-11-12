@@ -4,14 +4,16 @@ $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $valid = true;
 
-	if(strlen($email) <=10 || strlen($email) > 256){
+
+
+	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 		valid = false;
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 		$notAEmail = "not an email";
 		valid = false;
 	}
-	if(strlen($password) <=0 || strlen($password)>100);{
+	if(strlen($password) <= 0 || strlen($password)>100);{
 		$passwordSizeError = "Too small or too big of an email";
 		valid = false;
 	}
@@ -34,8 +36,8 @@ $valid = true;
 	**/
 	
 
-
-if ("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim($_POST["password"])) {
+/*
+if("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim($_POST["password"])) {
  // $_SESSION["access_granted"] = true;
   header("Location:granted.php");
 } else {
@@ -46,7 +48,7 @@ if ("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim
   $valid = false;
   header("Location:login.php");
 }
-
+*/
 
 /**
 if all valid, redirect the user to the Welcome page.
