@@ -73,4 +73,4 @@ if($valid == true){
 <?php	} ?>
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
 
-<?php
+
