@@ -21,7 +21,7 @@
 	<span id="statusError" class"error"><?= $statusError ?></span>
 <?php	} ?>
 
-<?php include 'naviagation.php';?>
+<?php require 'naviagation.php'; ?>
 
 <div id ="aboutsection">
 <div id = "aboutJackieHeader">
