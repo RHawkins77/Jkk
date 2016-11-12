@@ -62,7 +62,9 @@ if($valid == true){
 	
 ?>
 
-
+<html>
+<head></head>
+<body>
 <p> FULL Email: <?= htmlspecialchars($email) ?></p>
 <?php if(isset($emailError)){  ?>
 	<span id="emailError" class"error"><?= $emailError ?></span>
@@ -74,7 +76,5 @@ if($valid == true){
 	<span id="pwSizeError" class"error"><?= $passwordSizeError ?></span>
 <?php	} ?>
 <p> FULL password: <?= htmlspecialchars($password) ?></p>
-
-<?php
- header('index.php');
-?>
+</body>
+</html>
