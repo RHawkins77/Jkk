@@ -1,16 +1,17 @@
 
 <html>
-<head></head>
-<body>
+<head><title>Index</title></head>
+
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
 <link href="Styles/TopLinks.css" type="text/css" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.ico">
-		
+	</head>	
+	<body>
 <p>
 <div id="LogoAndName">
 <img id="LogoPhoto" src="LOGO.JPG" alt="Logo"/>
-</p>
 </div>
+</p>
 <div id="account">
 <a href="Login.php">LOGIN</a> |
 <a href="CreateAccount.html">Create Account</a>
@@ -40,11 +41,11 @@
 	</p]
 	</div>
 	
-	
+	</body>
 	<div id="footer">
 	<p id="foot">
 	<footer>&copy; Jackie's Knitting Nook  |  All items owned by Jackie  |  Photo's are not to be used elsewhere without permission & Compensation</Footer>
 	</p>
 	</div>
-</body>
+
 </html>
