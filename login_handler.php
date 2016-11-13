@@ -42,6 +42,22 @@ $_SESSION["access_granted"] = false;
 	
 	
 	
+
+	
+<?php	
+	/**
+
+	if(isset($_SESSION['message'])){
+		$_SESSION['presets']['email'] = $email;
+		header("Location:login.php");
+		exit;
+	}
+	**/
+	
+
+/**
+
+
 	<html>
 <head></head>
 <body>
@@ -61,19 +77,6 @@ $_SESSION["access_granted"] = false;
 </body>
 </html>
 	
-	
-<?php	
-	/**
-
-	if(isset($_SESSION['message'])){
-		$_SESSION['presets']['email'] = $email;
-		header("Location:login.php");
-		exit;
-	}
-	**/
-	
-
-/**
 
 **/
 
