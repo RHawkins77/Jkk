@@ -19,8 +19,9 @@
 <h1>Jackie's Knitting Nook</h1>
 
 
-
+<p>
 <?php include_once'naviagation.php' ?>
+</p>
 
 <div id ="aboutsection">
 <div id = "aboutJackieHeader">
