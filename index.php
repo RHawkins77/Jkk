@@ -19,7 +19,7 @@
 
 
 
-<?php require 'naviagation.php'; ?>
+<?php include_once('naviagation.php'); ?>
 
 <div id ="aboutsection">
 <div id = "aboutJackieHeader">
