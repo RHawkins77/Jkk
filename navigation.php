@@ -4,34 +4,34 @@
 <div id ="navigation">
 <ul>
 	<li>
-	<a href="index.html">Home</a>|</li>
+	<a href="index.php">Home</a>|</li>
 	<li>
-	<a href="HeadWare.html">HeadWare</a>|</li>
+	<a href="HeadWare.php">HeadWare</a>|</li>
 	<li>
-	<a href="Scarfs.html">Scarfs</a>|</li>
+	<a href="Scarfs.php">Scarfs</a>|</li>
 	<li>
-	<a href="Gloves.html">Gloves</a>|</li>
+	<a href="Gloves.php">Gloves</a>|</li>
 	<li>
-	<a href="Scrubbies.html">Scrubbies</a>|</li>
+	<a href="Scrubbies.php">Scrubbies</a>|</li>
 	<li>
-	<a href="Shawls.html">Shawls</a>|</li>
+	<a href="Shawls.php">Shawls</a>|</li>
 	<li>
-	<a href="Purses.html">Purses</a>|</li>
+	<a href="Purses.php">Purses</a>|</li>
 	<li>
-	<a href="ProdInfo.html">Product Information</a>|</li>
+	<a href="ProdInfo.php">Product Information</a>|</li>
 	<li>
-	<a href="UpcomingEvents.html">Upcoming Events</a>|</li>
+	<a href="UpcomingEvents.php">Upcoming Events</a>|</li>
 	<li>
-	<a href="ContactUs.html">Contact Us</a></li>
+	<a href="ContactUs.php">Contact Us</a></li>
 </ul>
 </div>
 
 <?php 
-/**<?php if ($thisPage=="Home") echo " id=\"currentpage\""; ?>
-i<?php if ($thisPage=="HeadWare") echo " id=\"currentpage\""; ?>
+
+/**
 <?php if ($thisPage=="Scarfs") echo " id=\"currentpage\""; ?>
 
-
+ id='<?php if ($thisPage==="Home") echo " id=\"currentpage\""; ?>'
 <?php if ($thisPage=="Gloves") echo " id=\"currentpage\""; ?>
 
 

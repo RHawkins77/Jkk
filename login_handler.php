@@ -6,15 +6,17 @@ $password = trim($_POST['password']);
 
 
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
+		$emailError = "Invalid Email Address";
 		$_SESSION['message'][] = "Invalid email Address";
 		$valid = false;
 	}
 	if(empty($password)){
-		&_SESSION['message'][] = "Missing Password";
+		$_SESSION['message'][] = "Missing Password";
+		$passwordSizeError = "Invalid password size";
 		$valid = false;
 	}
 	
-/**
+
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
 	
@@ -24,7 +26,18 @@ $password = trim($_POST['password']);
 	if(!isset($password) === true || strlen($password) > 100){
 		$passwordSizeError = "Too small or too big of an email";
 	}
-**/
+	if("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim($_POST["password"])) {
+ $_SESSION["access_granted"] = true;
+  header("Location:index.php");
+} else {
+  $statusError = "Invalid username or password";
+ $_SESSION["status"] = $status;
+  $_SESSION["email_preset"] = $_POST["email"];
+$_SESSION["access_granted"] = false;
+  $valid = false;
+  header("Location:login.php");
+}
+
 	?>
 	
 	
@@ -61,17 +74,7 @@ $password = trim($_POST['password']);
 	
 
 /**
-if("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim($_POST["password"])) {
- $_SESSION["access_granted"] = true;
-  header("Location:granted.php");
-} else {
-  $statusError = "Invalid username or password";
- $_SESSION["status"] = $status;
-  $_SESSION["email_preset"] = $_POST["email"];
-$_SESSION["access_granted"] = false;
-  $valid = false;
-  header("Location:login.php");
-}
+
 **/
 
 /**

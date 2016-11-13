@@ -1,4 +1,4 @@
-<?php $thisPage = "ContactUs"; ?>
+<?php $thisPage = "Purses"; ?>
 <html>
 <head>
 <link href="Styles/TopLinks.css" type="text/css" rel="stylesheet">
@@ -11,8 +11,8 @@
 </div>
 <?php include_once('navigation.php')?>
 
-<div id="contactUs">
-<h2>CONTACT US</h2>
+<div id="PURSES">
+<h2>PURSES</h2>
 
 
 	</div>
