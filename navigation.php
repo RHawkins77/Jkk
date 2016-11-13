@@ -1,4 +1,3 @@
-
 <div id ="navigation">
 <ul>
 	<li<?php if ($thisPage=="Home") echo " id=\"currentpage\""; ?>>
