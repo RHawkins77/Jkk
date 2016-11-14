@@ -1,8 +1,10 @@
 <?php 
-//session_start();
-$email = trim($_POST['email']);
+session_start();
+$email = $_POST['email'];
 $password = trim($_POST['password']);
-//$filteredEmail = = filter_var($email, FILTER_SANITIZE_EMAIL);
+$valid = false;
+
+
 
 
 	if(0 === preg_match('/^.+@.+\.[A-Za-z]{1,5}$/', $email, $matches)){
@@ -19,24 +21,36 @@ $password = trim($_POST['password']);
 
 	if(strlen($email) <= 10 || strlen($email) > 256){
 		$emailError = "Invalid Email Address Size";
+		$valid = false;
 	
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL === false)){
 		$notAEmail = "not an email";
+		$valid = false;
 	}
 	if(!isset($password) === true || strlen($password) > 100){
 		$passwordSizeError = "Too small or too big of an email";
+		$valid = false;
 	}
 	if("rhawkins@u.boisestate.edu" == trim($_POST["email"]) && "helloworld" == trim($_POST["password"])) {
- $_SESSION["access_granted"] = true;
-  header("Location:index.php");
-} else {
-  $statusError = "Invalid username or password";
- $_SESSION["status"] = $status;
-  $_SESSION["email_preset"] = $_POST["email"];
-$_SESSION["access_granted"] = false;
-  $valid = false;
-  header("Location:login.php");
+	$_SESSION["access_granted"] = true;
+	$_SESSION["user_email"] = htmlspecialchars($email);
+	$_SESSION["access_granted"] = true;
+	header("Location:welcome_page.php");
+	} else {
+	$statusError = "Invalid username or password";
+	$_SESSION["status"] = $status;
+	$_SESSION["email_preset"] = htmlspecialchars($_POST["email"]);
+	$_SESSION["access_granted"] = false;
+	$valid = false;
+	$_SESSION['valid'] = $valid;
+	header("Location:login.php");
 }
+
+	if(isset($_SESSION['message'])){
+		$_SESSION['presets']['email'] = $email;
+		header("Location:login.php");
+		exit;
+	}
 
 	?>
 	
@@ -45,18 +59,15 @@ $_SESSION["access_granted"] = false;
 
 	
 <?php	
-	/**
+	
 
-	if(isset($_SESSION['message'])){
-		$_SESSION['presets']['email'] = $email;
-		header("Location:login.php");
-		exit;
-	}
-	**/
+	
 	
 
 /**
-
+//This is just html to print out error codes and the user email and password when i started this and was verifying
+we were passing the correct info in the right way. Not really relevant but kept in case i needed to use for debugging
+---ryan
 
 	<html>
 <head></head>
@@ -80,15 +91,7 @@ $_SESSION["access_granted"] = false;
 
 **/
 
-/**
-if all valid, redirect the user to the Welcome page.
-if($valid == true){
-	header('Location: welcome.php');
-}	else {
-	//else redirect them to the form
-	redirect('Location: index.php')
-}
-**/
+
 	
 ?>
 

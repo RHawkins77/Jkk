@@ -1,5 +1,4 @@
  <?php $thisPage="loginPage.php";
-session_start();
 
 /**
  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
@@ -33,9 +32,10 @@ session_start();
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
 		<label for="email">Enter your Email:</label><br>
-		<input type="text" name="email" required><br>
+		<input type="text" name="email" id-"email" value="<?php isset($_SESSION['email_preset'])?>"
+		required><br>
 		<label for="password">Enter your Password:</label><br>
-		<input type="password" name="password" required><br>
+		<input type="password" name="password" id="password" required><br>
 		<label for"Login">Login Button:</label>
 		<input type="submit" name="Login">
 	</form>
