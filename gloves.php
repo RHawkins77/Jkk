@@ -16,9 +16,7 @@
 <?php include_once('navigation.php')?>
 <div id="gloves">
 <h2>Gloves</h2>
-
-
-	</div>
+</div>
 	
 	
 <?php include_once('footer.php')?>
