@@ -10,7 +10,7 @@
 	<li>
 	<a href="ContactUs.php">Contact Us</a></li>
 	<li>
-	<a href="Gloves.php">Gloves</a></li>
+	<a href="gloves.php">Gloves</a></li>
 	<li>
 	<a href="HeadWare.php">HeadWare</a></li>
 	
