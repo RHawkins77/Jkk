@@ -19,9 +19,5 @@ class User {
     return $this->email;
   }
 
-  public function hasPermission ($permission){
-    // return true if permission is found
-    return in_array($permission, $this->permissions);
-  }
 
 }?>

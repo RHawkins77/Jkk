@@ -15,5 +15,10 @@ $products = $dao->getProducts();
 		</ul>
 		<a href="/product/add.html">Add a product</a>
 	</body>
-</html>
+
+	<?php include_once('footer.php')?>
+
+	
+	
+	</html>
 		}

@@ -1,51 +1,48 @@
- <?php $thisPage="loginPage.php";
+ <?php 
+ session_start();
+ $thisPage="loginPage.php";
+ 
 
-/**
- if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"]) {
-    header("Location:granted.php");
+
+ if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"] == true) {
+	 
+    header("Location:index.php");
   }
 
   $email = "";
   if (isset($_SESSION["email_preset"])) {
     $email = $_SESSION["email_preset"];
   }
-**/
+
 ?>
 
 <html>
-	<head></head>
-	  <link href="Styles/TopLinks.css" type="text/css" rel="stylesheet">
-	  <link rel="LOGO" type="image/png" href="favicon.ico">	
-	
-<body>
-<p>
-<div id="LogoAndName">
-<img id="LogoPhoto" src="LOGO.JPG" alt="Logo"/>
-</p>
-<h1>Jackie's Knitting Nook</h1>
-</div>
+<?php include_once('head.php') ?>
+<?php include_once('header.php') ?>
 <?php include_once('navigation.php')?>
-
-<h2 id="loginHeader">Log Into Account</h2>
+<body>
+<h2>Log Into Account</h2>
 
 
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
 		<label for="email">Enter your Email:</label><br>
-		<input type="text" name="email" id-"email" value="<?php isset($_SESSION['email_preset'])?>"
-		required><br>
+		<input type="text" name="email" id="email" required><br>
+	
 		<label for="password">Enter your Password:</label><br>
-		<input type="password" name="password" id="password" required><br>
+		<input type="password" name="password" id="password" value="<?php isset($_SESSION['password'])?>"
+		required><br>
+				<?php if (isset($_SESSION['errors']['password'])) {?>
+		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
+		<?php } ?>
 		<label for"Login">Login Button:</label>
 		<input type="submit" name="Login">
 	</form>
 </div>
 </body>
-	<div id="footer">
-	<p>
-	<Strong>&copy; Jackie's Knitting Nook, all items owned by "" photo's are not to be used elsewhere without permission and Compensation.</Strong>
-	</p>
-	</div>
+
+<?php include_once('footer.php')?>
+
 </html>
 
 

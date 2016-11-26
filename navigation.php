@@ -1,30 +1,36 @@
 
 
 
-<div id ="navigation">
+
+<nav>
+<div>
 <ul>
-	<li>
-	<a href="index.php">Home</a>|</li>
-	<li>
-	<a href="HeadWare.php">HeadWare</a>|</li>
-	<li>
-	<a href="Scarfs.php">Scarfs</a>|</li>
-	<li>
-	<a href="Gloves.php">Gloves</a>|</li>
-	<li>
-	<a href="Scrubbies.php">Scrubbies</a>|</li>
-	<li>
-	<a href="Shawls.php">Shawls</a>|</li>
-	<li>
-	<a href="Purses.php">Purses</a>|</li>
-	<li>
-	<a href="ProdInfo.php">Product Information</a>|</li>
-	<li>
-	<a href="UpcomingEvents.php">Upcoming Events</a>|</li>
+<li>
+	<a href="index.php">Home</a></li>
 	<li>
 	<a href="ContactUs.php">Contact Us</a></li>
+	<li>
+	<a href="Gloves.php">Gloves</a></li>
+	<li>
+	<a href="HeadWare.php">HeadWare</a></li>
+	
+	<li>
+	<a href="ProdInfo.php">Product Information</a></li>
+	<li>
+	<a href="Purses.php">Purses</a></li>
+	<li>
+	<a href="Scarfs.php">Scarfs</a></li>
+	<li>
+	<a href="Scrubbies.php">Scrubbies</a></li>
+	<li>
+	<a href="Shawls.php">Shawls</a></li>
+	<li>
+	<a href="UpcomingEvents.php">Upcoming Events</a></li>
+
 </ul>
 </div>
+</nav>
+
 
 <?php 
 

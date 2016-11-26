@@ -1,3 +1,30 @@
+
+header{
+	
+}
+
+
+ nav{
+	 text-align:center;
+	 width:100%;
+	 margin-top:50px;
+ }
+ 
+nav > ul > li {
+	display: inline;
+	padding:10px;
+	text-align:center;
+	margin-bottom:10px;
+	
+	background-color:#F;
+	list-style-type:none;
+}
+
+body{
+	float:middle;
+}
+
+
 table{
 	border-collapse: collapse;
 	
@@ -8,21 +35,42 @@ body{
 }
 
 #LogoPhoto{
-	height:25%;
-	width:20%;
+	float:left;
+	height:10%;
+	width:10%;
 	display:block;
 	margin:0 auto;
 	
+}
+
+#logoNameBar{
+	padding:2%;
+	margin:2%;
+}
+
+logoAndNameBorder {
+	overflow:  hidden;
+}
+
+
+#userOptions{
+	float:right;
+}
+
+#mainHeader{
+	margin-bottom:0;
+	padding-top:2.3%;
 }
 h2{
 	right:0;
 	left:0;
 	text-align:center;
+	text-decoration:underline;
 }
 h1{
 	display:block;
 	border:5%;
-	text-align:center;
+	
 	padding:  0.25%;
 }
 
@@ -39,26 +87,19 @@ li:responsive{
 	background-color: brown;
 }
 
- 
- 
-#Navigation {
 
-	text-align:center;
-	margin-bottom:10px;
-	padding:50px,20px,50px,20px;
-	background-color:#F;
-	list-style-type:none;
-}
 
 #aboutJackieHeader{
 	text-align:center;
 }
 
 #logininputs{
-	position:absolute;
-	top:50%;
-	left:50%;
-	float:center;
+	overflow:auto;
+   margin: auto;
+    width: 200px;'
+	height:200px;
+    border: 3px solid black;
+    padding: 10px;
 }
 
 #Jackie {
@@ -71,15 +112,15 @@ li:responsive{
 
 
 #aboutgrandma{
-	
 	margin:auto;
 	padding:auto;
 }
 
+#userOptions{
+clear:left;
+}
 
-
-#aboutsection {
-	font-family: 'Dancing Script', cursive;
+#accountCreator {
 	font-size:30px;
 	display:block;
 	border: 5px solid black;
@@ -90,6 +131,20 @@ li:responsive{
 	padding-bottom:10px;
 	text-align:center;
     max-width: 50%;
+}
+
+#aboutSectionContainer {
+	font-family: 'Dancing Script', cursive;
+	font-size:30px;
+	display:block;
+	border: 5px solid black;
+	margin:auto;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	text-align:center;
+    max-width: 95%;
 }
 
 
@@ -108,12 +163,14 @@ li:responsive{
 }
 
 
-
-#footer{
-position: absolute;
-margin:20px;
-
-bottom: 0;
-width: 100%;
-height: 60px;
+#foot{
+	margin-top:2%;
+	font-size:20px;
+	bottom:0;
+    position: absolute;
+	left:0;
+	padding-bottom:20px;
+    height: 5%;
+	width:99%;
+	text-align:center;
 }

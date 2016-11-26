@@ -1,32 +1,31 @@
+<?php 
+require_once('session_helper.php');
+if(session_status() === PHP_SESSION_NONE){
+session_start();
+}
 
-<html>
-<head><title>Index</title></head>
+?>
 
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
-<link href="Styles/TopLinks.css" type="text/css" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.ico">
-	</head>	
-	<body>
-<p>
-<div id="LogoAndName">
-<img id="LogoPhoto" src="LOGO.JPG" alt="Logo"/>
-</div>
-</p>
-<div id="account">
-<a href="Login.php">LOGIN</a> |
-<a href="CreateAccount.html">Create Account</a>
-</div>
-<h1>Jackie's Knitting Nook</h1>
+
+
+<?php include_once('head.php') ?>
+
+<?php include_once('header.php') ?>
+
+
+<body>
+
+<?php include_once('userOptions.php')?>
+
 
 
 
 <?php include_once('navigation.php')?>
 
+	<h2>ABOUT JACKIE</h2>
+<div id ="aboutSectionContainer">
 
-<div id ="aboutsection">
-<div id = "aboutJackieHeader">
-<h2 id="aboutheader">ABOUT JACKIE</h2>
-</div>
+
 	<img id="Jackie" src="Jackie.jpg" alt="PhotoOfJackie"/>
 	<p id="aboutGrandma">
 	Growing up with a Mother who loved to knit, taught me everything I know. Since I 
@@ -39,14 +38,11 @@
 	many unwanted Christmas Gift end up in attic boxes) but rather for themselves. I am new
 	to the Internet Online sales and will start out with mostly what I have already made and
 	available through the website
-	</p]
-	</div>
-	
-	</body>
-	<div id="footer">
-	<p id="foot">
-	<footer>&copy; Jackie's Knitting Nook  |  All items owned by Jackie  |  Photo's are not to be used elsewhere without permission & Compensation</Footer>
 	</p>
-	</div>
+</div>
+	</body>
+	
+	
+<?php include_once('footer.php')?>
 
 </html>
