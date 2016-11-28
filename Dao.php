@@ -1,5 +1,7 @@
 <?php
 
+require_once('password_compat/lib/password.php');
+
 class Dao
 {
 	private $host = "us-cdbr-iron-east-04.cleardb.net";
@@ -19,36 +21,86 @@ class Dao
 		return $conn->query("SELECT * FROM customer");
 	}
 	
+	
+	//checking if email exists then checking if password is the same
 	public function doesUserAndPasswordMatch($email, $password)
 	{
 		$conn = $this->getConnection();
-		$stmt = $conn->prepare("SELECT email, customer_password FROM customer WHERE email = :email
-								AND customer_password = :customer_password");
-		$stmt->bindParam(':email', $email);
-		$stmt->bindParam(':customer_password', $customer_password);
-		try{
+		$query = "SELECT email, customer_password FROM customer WHERE email = :email";
+		$stmt = $conn->prepare($query);
+		$stmt->bindParam(":email", $email);
 		$stmt->execute();
-		return true;
-		}catch(PDOException $e){
+		
+		$row = $stmt->fetch();
+		
+		//does our user exist?
+		if(!$row){
+			echo"we have no row";
+			return false;
+		}
+		
+		//did they provide the correct password?
+		if($row['customer_password'] == $password){
+			return true;
+		}
+		else{
 			return false;
 		}
 	}
 	
+
+	public function addUser($email, $password, $firstName, $lastName)
+	{	
+		$conn = $this->getConnection();
+		
+		//hash our password here
+		$digest = password_hash($password, PASSWORD_DEFAULT);
+		//must chech if hash was successful
+		if(!$digest){
+			throw new Exception("PASSWORD COULD NOT BE HASHED!");
+		}
+		$query = "INSERT INTO customer(first_name, last_name, email, customer_password)
+				  VALUES (:firstName, :lastName, :email, :password)";
+				  
+		$stmt = $conn->prepare($query);
+		$stmt->bindParam(":firstName", $firstName);
+		$stmt->bindParam(":lastName", $lastName);
+		$stmt->bindParam(":email", $email);
+		$stmt->bindParam(":password", $digest);
+		$stmt->execute();
+		$row = $stmt->fetchAll();
+		
+		//did we create our user?
+		if(!$row){
+			return false;
+		}else{
+			return true;
+		}
+	}
 	
-	public function userExists($email)
+	public function emailUsed($email)
 	{
 		$conn = $this->getConnection();
-		$stmt = $conn->prepare("SELECT * FROM customer WHERE email = :email");
+		$query = "SELECT * FROM customer WHERE email = :email";
+		$stmt = $conn->prepare($query);
 		$stmt->bindParam(':email', $email);
 		$stmt->execute();
-		if($stmt->fetchAll()){
+		$row = $stmt->fetch();
+	
+		if(!$row)
+		{
+			return false;
+		}
+		if($row['email'] == $email){
 			return true;
-	}	else {
-		return false;
-	}
+		}else{
+			return false;
+		}
+		
 	}
 	
-	public function addUser($email, $password)
+	/**
+	public function addUserAddress($house_number, $street, $town, $)
 	{
 		$conn = $this->getConnection();
 		$query = "INSERT INTO customer(email, customer_password)
@@ -64,7 +116,9 @@ class Dao
 		}catch(PDOException $e){
 			return false;
 		}
-	}	
+	}
+	**/
+	
 }
 ?>
  

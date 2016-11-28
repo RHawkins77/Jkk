@@ -1,11 +1,9 @@
- <?php 
- session_start();
- $thisPage="loginPage.php";
+ <?php  $thisPage="loginPage.php"; ?>
+<?php 
+session_start();
+
  
-
-
  if (isset($_SESSION["access_granted"]) && $_SESSION["access_granted"] == true) {
-	 
     header("Location:index.php");
   }
 
@@ -13,7 +11,6 @@
   if (isset($_SESSION["email_preset"])) {
     $email = $_SESSION["email_preset"];
   }
-
 ?>
 
 <html>
@@ -24,18 +21,19 @@
 <h2>Log Into Account</h2>
 
 
+		<?php if (isset($_SESSION['errors']['password'])) {?>
+		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
+		<?php }  ?>
+
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
 		<label for="email">Enter your Email:</label><br>
-		<input type="text" name="email" id="email" required><br>
+		<input type="text" name="email" id="email" value="<?= $_SESSION['failedemail'] ?> " required><br>
 	
 		<label for="password">Enter your Password:</label><br>
-		<input type="password" name="password" id="password" value="<?php isset($_SESSION['password'])?>"
-		required><br>
-				<?php if (isset($_SESSION['errors']['password'])) {?>
-		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
-		<?php } ?>
-		<label for"Login">Login Button:</label>
+		<input type="text" name="password" id="password" required><br>
+		
+		<span id="login"><label for"Login">Login Button:</label></span>
 		<input type="submit" name="Login">
 	</form>
 </div>

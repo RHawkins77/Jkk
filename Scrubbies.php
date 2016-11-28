@@ -18,7 +18,7 @@
 <h2>Scrubbies</h2>
 
 
-	</div>
+
 	
 	
 <?php include_once('footer.php')?>

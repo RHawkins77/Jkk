@@ -18,8 +18,29 @@
 <h2>PURSES</h2>
 
 
-	</div>
-	
+ 
+ <a href="purchaseItem1461.php">
+  <img src="productPhotos/purses/1461" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+  
+</a>  
+
+
+<a href="productPhotos/purses/purchaseItem1462.php">
+	<img src="productPhotos/purses/1462" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+</a>  
+
+<a href="productPhotos/purses/purchaseItem1463.php">
+	<img src="productPhotos/purses/1463" alt="HTML tutorial" style="width:150px;height:150px;border:0;"> 
+</a>   
+
+<a href="productPhotos/purses/purchaseItem1464.php">
+	<img src="productPhotos/purses/1464" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+</a>  
+
+<a href="productPhotos/purses/purchaseItem1465.php">
+<img src="productPhotos/purses/1465" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+</a>  
+
 	
 <?php include_once('footer.php')?>
 

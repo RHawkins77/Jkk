@@ -1,7 +1,6 @@
 
 
 <header>	
-
 <div id="header">
 <div id="LogoAndName">
 <img id="LogoPhoto" src="LOGO.JPG" alt="Logo"/>

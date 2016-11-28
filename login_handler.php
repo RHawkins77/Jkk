@@ -2,7 +2,7 @@
 session_start();
 require_once('Dao.php');
 $dao = new Dao();
-$email = $_POST['email'];
+$email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $errors = array();
 
@@ -25,15 +25,16 @@ $errors = array();
 	if(!isset($password) === true || strlen($password) > 100){
 		$errors['password'] = "Too small or too big of an email";
 	}
-	if($dao->doesUserAndPasswordMatch(trim('$_POST[$email]'), trim('$_POST[$password]')))
+	if($dao->doesUserAndPasswordMatch(trim($email), trim($password)))
 	{
 	$_SESSION['user_email'] = htmlspecialchars($email);
 	$_SESSION['access_granted'] = true;
+	$_SESSION['passwordtest'] = $password;
+	$_SESSION['errors'] = $errors;
 	header('Location:index.php');
 	} else {
-	$errors['password'] = "Invalid username or password";
-	$_SESSION['status'] = $status;
-	$_SESSION['email'] = htmlspecialchars($email);
+	$errors['password'] = "Invalid username or password Entered to Login";
+	$_SESSION['failedemail'] = htmlspecialchars($email);
 	$_SESSION['password'] = htmlspecialchars($password);
 	$_SESSION['access_granted'] = false;
 	$_SESSION['errors'] = $errors;
@@ -50,7 +51,6 @@ $errors = array();
 
 	
 	
-?>
 	
 <?php	
 	

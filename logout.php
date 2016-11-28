@@ -1,6 +1,13 @@
 <?php
-require_once('session_helper.php');
 session_start();
-logoutUser();
-header("Location: index.php");
+
+
+session_unset();
+
+setcookie(session_name(), '', -1);
+
+
+
+session_destroy();
+header('LOCATION: index.php');
 ?> 

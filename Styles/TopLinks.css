@@ -4,21 +4,18 @@ header{
 }
 
 
- nav{
+nav{
 	 text-align:center;
 	 width:100%;
 	 margin-top:50px;
- }
- 
-nav > ul > li {
-	display: inline;
-	padding:10px;
-	text-align:center;
-	margin-bottom:10px;
-	
-	background-color:#F;
-	list-style-type:none;
 }
+
+#currentpage:active{
+	background-color:green;
+	
+}
+
+ 
 
 body{
 	float:middle;
@@ -40,7 +37,6 @@ body{
 	width:10%;
 	display:block;
 	margin:0 auto;
-	
 }
 
 #logoNameBar{
@@ -82,11 +78,6 @@ li{
 li:hover{
 	background-color: black;
 }
- 
-li:responsive{
-	background-color: brown;
-}
-
 
 
 #aboutJackieHeader{
@@ -120,7 +111,9 @@ li:responsive{
 clear:left;
 }
 
-#accountCreator {
+
+
+#accountCreatorHandler {
 	font-size:30px;
 	display:block;
 	border: 5px solid black;
@@ -147,10 +140,22 @@ clear:left;
     max-width: 95%;
 }
 
+#userOptions {
+	padding-right:20px;
+}
 
+#prod.a {
+	padding:15px;
+}
+
+
+
+#passwordError {
+	font:25px;
+}
 
 #logmein{
-	font-size:30px;
+	font-size:30px; 
 	display:block;
 	border: 5px solid black;
 	margin:auto;
@@ -163,14 +168,13 @@ clear:left;
 }
 
 
-#foot{
+#footText{
+	clear:left;
 	margin-top:2%;
 	font-size:20px;
 	bottom:0;
-    position: absolute;
-	left:0;
-	padding-bottom:20px;
     height: 5%;
 	width:99%;
 	text-align:center;
+
 }

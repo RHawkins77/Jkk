@@ -1,4 +1,8 @@
-<?php $thisPage = "ContactUs"; ?>
+<?php $thisPage = "ContactUs"; 
+if(session_status() === PHP_SESSION_NONE){
+session_start();
+}
+?>
 <html>
 
 <?php include_once('head.php') ?>
