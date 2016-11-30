@@ -31,7 +31,7 @@ $errors = array();
 	$_SESSION['access_granted'] = true;
 	$_SESSION['passwordtest'] = $password;
 	$_SESSION['errors'] = $errors;
-	header('Location:index.php');
+	header('Location:welcome_page.php');
 	} else {
 	$errors['password'] = "Invalid username or password Entered to Login";
 	$_SESSION['failedemail'] = htmlspecialchars($email);

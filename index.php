@@ -9,12 +9,14 @@ $thisPage = "Home"; ?>
 <title><?= $thisPage?></title>
 <?php include_once('head.php') ?>
 <?php include_once('header.php') ?>
-	<?php if(isset($thispage)){echo"$thispage";}?>
+
 <body>
 <?php include_once('userOptions.php')?>
 <?php include_once('navigation.php')?>
+
 	<h2>ABOUT JACKIE</h2>
 <div id ="aboutSectionContainer">
+
 
 
 	<img id="Jackie" src="Jackie.jpg" alt="PhotoOfJackie"/>

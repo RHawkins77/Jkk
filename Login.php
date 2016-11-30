@@ -20,10 +20,13 @@ session_start();
 <body>
 <h2>Log Into Account</h2>
 
-<?php var_dump($_SESSION); ?>
 
 		<?php if (isset($_SESSION['errors']['password'])) {?>
 		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
+		<?php }  ?>
+		
+		<?php if (isset($_SESSION['errors']['noAccess'])) {?>
+		<span id="passwordError" class="error"><?= $_SESSION['errors']['noAccess'] ?></span>
 		<?php }  ?>
 
 <div id="logininputs">

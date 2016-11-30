@@ -1,9 +1,19 @@
 
+<?php
+
+if(session_status() === PHP_SESSION_NONE){
+session_start();
+} 
+?>
 
 
 
-
-
+<?php
+if(!isset($_SESSION["access_granted"])){
+		$_SESSION['errors']['noAccess'] = "Hey you are not allowed to go there without Logging in.";
+		header('Location:Login.php');
+}
+?>
 
 
 
@@ -20,11 +30,9 @@
 <?php include_once('userOptions.php')?>
 
 
-
-
 <?php include_once('navigation.php')?>
 <div = "welcome">
-<h1>WELCOME TO OUR LOGIN PAGE. YOU HAVE SUCCESSFULLY LOGGED IN. WE DONT HAVE MUCH HERE YET BUT THANK YOU FOR JOINING US. HAVE A LOOK AROUND OUR PRODUCTS</H2>
+<h1>WELCOME TO OUR LOGIN PAGE. YOU HAVE SUCCESSFULLY LOGGED IN. Non-members will not be accessing this cool page. Feel free to browse around and buy some things.</H2>
 <div>
 
 
