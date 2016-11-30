@@ -17,7 +17,7 @@
 <div id="headWare">
 <h2>HEADWARE</h2>
 </div>
-	<img src="productPhotos/head/1485" alt="head" style="width:150px;height:150px;border:0;">
+	<img src="../../1485" alt="head" style="width:150px;height:150px;border:0;">
 	<img src="productPhotos/head/1486" alt="head" style="width:150px;height:150px;border:0;">
 	<img src="productPhotos/head/1487" alt="head" style="width:150px;height:150px;border:0;">
 	<img src="productPhotos/head/1488" alt="head" style="width:150px;height:150px;border:0;">
