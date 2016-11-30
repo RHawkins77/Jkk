@@ -23,7 +23,7 @@ session_start();
 	</div>
 	
 	<div id="contactUsPic.jpeg">
-	 <img src="/q.jpeg" alt="gloves">
+	 <img src="/q.jpg" alt="gloves">
 	
 <?php include_once('footer.php')?>
 
