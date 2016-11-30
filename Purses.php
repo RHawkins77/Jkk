@@ -32,7 +32,7 @@
 
 
 
-	<img src="productPhotos/purses/1462" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+	<img src="1462.jpg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
  
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -42,7 +42,7 @@
 </form>
 
 
-	<img src="productPhotos/purses/1463" alt="HTML tutorial" style="width:150px;height:150px;border:0;"> 
+	<img src="1463" alt="HTML tutorial" style="width:150px;height:150px;border:0;"> 
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
@@ -50,7 +50,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-	<img src="productPhotos/purses/1464" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+	<img src="1464" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
@@ -58,7 +58,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-<img src="productPhotos/purses/1465" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+<img src="1465" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
