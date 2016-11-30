@@ -16,7 +16,7 @@ $errors = array();
 		$errors['password'][] = "Missing Password. Cannot be empty";
 		$valid = false;
 	}
-	if(strlen($email) <= 10 || strlen($email) > 256){
+	if(strlen($email) <= 5 || strlen($email) > 256){
 		$errors['email'] = "Invalid Email Address Size";
 	}else if(!filter_var($email, FILTER_VALIDATE_EMAIL === false)){
 		$notAEmail = "not an email";

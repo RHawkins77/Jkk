@@ -16,31 +16,57 @@
 <?php include_once('navigation.php')?>
 <div id="PURSES">
 <h2>PURSES</h2>
+</div>
 
+ <div id ="prod">
 
- 
- <a href="purchaseItem1461.php">
   <img src="productPhotos/purses/1461" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
   
-</a>  
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
 
-<a href="productPhotos/purses/purchaseItem1462.php">
+
 	<img src="productPhotos/purses/1462" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
-</a>  
+ 
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
-<a href="productPhotos/purses/purchaseItem1463.php">
+
 	<img src="productPhotos/purses/1463" alt="HTML tutorial" style="width:150px;height:150px;border:0;"> 
-</a>   
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
-<a href="productPhotos/purses/purchaseItem1464.php">
 	<img src="productPhotos/purses/1464" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
-</a>  
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
-<a href="productPhotos/purses/purchaseItem1465.php">
 <img src="productPhotos/purses/1465" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
-</a>  
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F2XKXFA7KWMTE">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 
+</div>
 	
 <?php include_once('footer.php')?>
 

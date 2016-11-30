@@ -4,7 +4,7 @@ customer_id INTEGER NOT NULL AUTO_INCREMENT,
 first_name VARCHAR(75) NOT NULL,
 last_name VARCHAR(75) NOT NULL,
 email VARCHAR(124) NOT NULL,
-customer_password VARCHAR(24) NOT NULL,
+customer_password VARCHAR(256) NOT NULL,
 PRIMARY KEY(customer_id)
 );
 

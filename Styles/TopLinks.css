@@ -4,15 +4,19 @@ header{
 }
 
 
+#gallery{
+	overflow:scroll;
+
+}
+
 nav{
 	 text-align:center;
 	 width:100%;
 	 margin-top:50px;
 }
 
-#currentpage:active{
+#currentpage{
 	background-color:green;
-	
 }
 
  
@@ -144,11 +148,20 @@ clear:left;
 	padding-right:20px;
 }
 
-#prod.a {
+
+#prod {
+	
+	width:90%;
 	padding:15px;
 }
 
-
+#prod.img{
+	margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+	overflow:scroll;
+}
 
 #passwordError {
 	font:25px;

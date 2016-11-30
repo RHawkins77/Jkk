@@ -26,21 +26,22 @@ class Dao
 	public function doesUserAndPasswordMatch($email, $password)
 	{
 		$conn = $this->getConnection();
-		$query = "SELECT email, customer_password FROM customer WHERE email = :email";
+		$query = 'SELECT * FROM customer WHERE email = :email';
 		$stmt = $conn->prepare($query);
 		$stmt->bindParam(":email", $email);
 		$stmt->execute();
 		
 		$row = $stmt->fetch();
-		
 		//does our user exist?
 		if(!$row){
 			echo"we have no row";
 			return false;
 		}
+		$digest = $row['customer_password'];
+		
 		
 		//did they provide the correct password?
-		if($row['customer_password'] == $password){
+		if(password_verify($password, $digest)){
 			return true;
 		}
 		else{
@@ -51,14 +52,15 @@ class Dao
 
 	public function addUser($email, $password, $firstName, $lastName)
 	{	
-		$conn = $this->getConnection();
-		
 		//hash our password here
 		$digest = password_hash($password, PASSWORD_DEFAULT);
 		//must chech if hash was successful
 		if(!$digest){
 			throw new Exception("PASSWORD COULD NOT BE HASHED!");
 		}
+		$conn = $this->getConnection();
+		
+	
 		$query = "INSERT INTO customer(first_name, last_name, email, customer_password)
 				  VALUES (:firstName, :lastName, :email, :password)";
 				  

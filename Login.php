@@ -20,6 +20,7 @@ session_start();
 <body>
 <h2>Log Into Account</h2>
 
+<?php var_dump($_SESSION); ?>
 
 		<?php if (isset($_SESSION['errors']['password'])) {?>
 		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
@@ -28,7 +29,7 @@ session_start();
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
 		<label for="email">Enter your Email:</label><br>
-		<input type="text" name="email" id="email" value="<?= $_SESSION['failedemail'] ?> " required><br>
+		<input type="text" name="email" id="email" value="<?php if(isset($_SESSION['failedemail'])) {?> <?= $_SESSION['failedemail'] ?> <?php } ?> " required><br>
 	
 		<label for="password">Enter your Password:</label><br>
 		<input type="text" name="password" id="password" required><br>
