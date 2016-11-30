@@ -19,7 +19,7 @@
 </div>
 	
 	<div id="prod">
-  <img src="/1498" alt="gloves">
+  <img src="/1498.jpeg" alt="gloves">
  
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -28,7 +28,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1499" alt="gloves">
+  <img src="/1499.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="DWUMPQWYMLR2Y">
@@ -36,7 +36,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1500" alt="gloves">
+  <img src="/1500.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="DWUMPQWYMLR2Y">
@@ -44,7 +44,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1501" alt="gloves">
+  <img src="/1501.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="WKJ9HDX8ZRU7G">
@@ -52,7 +52,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1502" alt="gloves">
+  <img src="/1502.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="DWUMPQWYMLR2Y">
@@ -60,7 +60,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1503" alt="gloves">
+  <img src="/1503.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="DWUMPQWYMLR2Y">
@@ -68,7 +68,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1504" alt="gloves">
+  <img src="/1504.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="DWUMPQWYMLR2Y">
@@ -76,7 +76,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1451" alt="gloves">
+  <img src="/1451.jpeg" alt="gloves">
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="DWUMPQWYMLR2Y">
