@@ -20,7 +20,7 @@
 
  <div id ="prod">
 
-  <img src="productPhotos/purses/1461" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+  <img src="1461" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
   
 
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -32,7 +32,7 @@
 
 
 
-	<img src="1462.jpg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+	<img src="1462" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
  
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
