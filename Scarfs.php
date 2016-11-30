@@ -20,7 +20,7 @@
 
 <div id="prod">
 
-  <img src="/1473" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+  <img src="/1473.jpeg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="SK97E3K9YRM9U">
@@ -28,16 +28,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1474" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
-
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="SK97E3K9YRM9U">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-  <img src="/1475" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+  <img src="/1474.jpeg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
 
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -46,7 +37,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1476" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+  <img src="/1475.jpeg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
 
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -55,7 +46,16 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-  <img src="/1477" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+  <img src="/1476.jpeg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="SK97E3K9YRM9U">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+  <img src="/1477.jpeg" alt="HTML tutorial" style="width:150px;height:150px;border:0;">
 	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="SK97E3K9YRM9U">
