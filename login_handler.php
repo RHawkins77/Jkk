@@ -41,11 +41,6 @@ $errors = array();
 	header('Location:login.php');
 }
 
-	if(isset($_SESSION['message'])){
-		$_SESSION['presets']['email'] = $email;
-		header("Location:login.php");
-		exit;
-	}
 
 	?>
 
