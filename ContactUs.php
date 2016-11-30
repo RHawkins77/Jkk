@@ -20,10 +20,10 @@ session_start();
 <?php include_once('navigation.php')?>
 <div id="contactUs">
 <h2>CONTACT US</h2>
-
-
 	</div>
 	
+	<div id="contactUsPic.jpeg">
+	 <img src="/q.jpeg" alt="gloves">
 	
 <?php include_once('footer.php')?>
 
