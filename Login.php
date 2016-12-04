@@ -20,14 +20,18 @@ session_start();
 <body>
 <h2>Log Into Account</h2>
 
-
+	<span id="errors">
 		<?php if (isset($_SESSION['errors']['password'])) {?>
-		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
+		<span id="passwordError" class="error"><?= $_SESSION['errors']['password']   ?></span>
 		<?php }  ?>
-		
+		<br>
 		<?php if (isset($_SESSION['errors']['noAccess'])) {?>
 		<span id="passwordError" class="error"><?= $_SESSION['errors']['noAccess'] ?></span>
 		<?php }  ?>
+		<?php if (isset($_SESSION['errors']['password'])) {?>
+		<span id="passwordError" class="error"><?= $_SESSION['errors']['password'] ?></span>
+		<?php }  ?>
+	</span>
 
 <div id="logininputs">
 	<form method="POST" action="login_handler.php">
@@ -44,8 +48,13 @@ session_start();
 </body>
 
 <?php include_once('footer.php')?>
-
+<script>
+$("span").ready(function(){
+	$("#errors").click(function(){
+	  $("#errors").fadeOut();
+	});
+}); 
+</script>
 </html>
-
 
 

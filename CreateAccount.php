@@ -2,6 +2,9 @@
 if(session_status() === PHP_SESSION_NONE){
 session_start();
 }
+if(isset($_SESSION['errors']['email'])){
+	$errors = $_SESSION['errors']['email'];
+}
 ?>
 
 <html>
@@ -12,7 +15,20 @@ session_start();
 <?php include_once('navigation.php')?>
 
 <h2>CREATE ACCOUNT</h2>
-			
+		
+
+
+	<span id="errors">
+		<?php if (isset($_SESSION['errors']['emails'])){?>
+		<span id="passwordError" class="error"><p> <?php $_SESSION['errors']['email'] ?><p></span>
+
+		<?php }  ?>
+		<?php if (isset($_SESSION['password'])){?>
+
+		<span id="passwordError" class="error"><?= $_SESSION['password'] ?></span>
+		<?php }  ?>
+	</span>
+	<?php	var_dump($_SESSION)?>
 		
 <div id="accountCreatorHandler">
 	<form method="POST" action="account_creator_handler.php">

@@ -24,8 +24,7 @@ session_start();
 	<li>
 	<a href="Scrubbies.php" id="navTab">Scrubbies</a></li>
 	<li>
-	<a href="pastEvents.php" id="navTab">Upcoming Events</a></li>
-
+	<a href="pastEvents.php" id="navTab">Products From The Past</a></li>
 </ul>
 </div>
 </nav>

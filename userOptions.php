@@ -13,7 +13,7 @@ require_once('session_helper.php');
 
 <a href="logout.php" data-toggle="logoutTip" data-placement="left" title="Click Here to Logout of Your Account">*LOGOUT*</a> 
 <div>
-<a href="accountChanges.php">*ACCOUNT*</a>
+<a href="welcome_page.php">*ACCOUNT*</a>
 </div>
 <?php }else{?>
 <a href="Login.php">LOGIN</a>

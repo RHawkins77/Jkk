@@ -22,10 +22,10 @@ session_start();
 <h2>CONTACT US</h2>
 	</div>
 	
-	<div id="contactUsPic.jpeg">
+	<div id="prod">
 	 <img src="/q.jpg" alt="gloves">
-	
+	</div>
 <?php include_once('footer.php')?>
 
-	</head>	
+
 </html>
